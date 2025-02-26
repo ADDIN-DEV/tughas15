@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style15.css">
+	<title>Tugas 15 Addin</title>
+</head>
+<body>
+		<h1>Form Nama</h1>
+
+		<div class="kotak">
+			<div class="p">Masukkan Nama Anda :
+			<input id="name" type="text" placeholder="insert nama kamu">
+			<button onclick="muncul_nama()">Cek Nama Sekarang!</button>
+		</div>
+		</div>
+	<script>
+		function muncul_nama() {
+		let nama = document.getElementById("name").value
+		if (nama.trim() === "") {
+    	alert("Silakan masukkan nama terlebih dahulu!");
+  		} else {
+    	alert("Halo, " + nama + " !");
+  }
+		}
+	</script>
+		
+</body>
+</html>
